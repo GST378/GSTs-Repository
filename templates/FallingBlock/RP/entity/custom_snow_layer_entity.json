@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "falling_block:custom_snow_layer.entity",
+      "materials": { "default": "entity_alphablend" },
+      "geometry": { "default": "geometry.snow_layer_block.entity" },
+      "textures": { "default": "textures/blocks/snow" },
+      "scripts": {
+        "initialize": ["v.layers = 0.0;"],
+        "pre_animation": ["v.layers = q.property('falling_block:layers');"]
+      },
+      "render_controllers": ["controller.render.custom_falling_block.layers"]
+    }
+  }
+}
