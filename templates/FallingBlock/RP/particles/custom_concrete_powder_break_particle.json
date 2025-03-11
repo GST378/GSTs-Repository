@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "description": {
+      "identifier": "falling_block:custom_concrete_powder.break_particle",
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/blocks/concrete_powder_white"
+      }
+    },
+    "components": {
+      "minecraft:emitter_rate_instant": { "num_particles": "Math.random(65,95)" },
+      "minecraft:emitter_lifetime_once": { "active_time": 0 },
+      "minecraft:emitter_shape_point": {
+        "offset": ["Math.random(-0.5,0.5)", "Math.random(-0.5,0.5)", "Math.random(-0.5,0.5)"],
+        "direction": ["Math.random(-1,1)", 1, "Math.random(-1, 1)"]
+      },
+      "minecraft:particle_initial_speed": "Math.random(0,4)",
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "0.2f / (Math.random(0.0, 1.0) * 0.9f + 0.1f)"
+      },
+      "minecraft:particle_motion_dynamic": {
+        "linear_acceleration": [0, -11, 0],
+        "linear_drag_coefficient": 0.5
+      },
+      "minecraft:particle_motion_collision": {
+        "coefficient_of_restitution": 0.1,
+        "collision_drag": 5,
+        "collision_radius": 0.1
+      },
+      "minecraft:emitter_initialization": {
+        "creation_expression": "v.size = Math.random(0.05625,0.0675); v.uv_x = Math.random(0, 12); v.uv_y = Math.random(0, 12);"
+      },
+      "minecraft:particle_appearance_billboard": {
+        "size": ["v.size", "v.size"],
+        "facing_camera_mode": "lookat_xyz",
+        "uv": {
+          "texture_width": 16, "texture_height": 16,
+          "uv": ["v.uv_x", "v.uv_y"], "uv_size": [4, 4]
+        }
+      },
+      "minecraft:particle_appearance_lighting": {}
+    }
+  }
+}
