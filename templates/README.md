@@ -11,6 +11,8 @@
   - **Features**
   - [X] Vanilla Parity
   - [X] High Quality
+  - [X] Appropriate geometries and render controllers
+  - [X] Custom Breaking Particles
   - **Requirements**
   - [ ] Upcoming Creator Features
   - [ ] Beta API's
