@@ -165,8 +165,8 @@ function dropFallingBlock(blockId, dimension, location) {
 > Note that, like the entity, the particle has the same identifier as the block, but with `.break_particle` at the end.
 
 ## License
-_GNU General Public License v3.0_ For more details see the [LICENSE]((GPL-3.0)
-https://github.com/GST378/GSTs-Repository/blob/main/LICENSE) file.
+_GNU General Public License v3.0 (GPL-3.0)_
+> For more details see the [LICENSE](https://github.com/GST378/GSTs-Repository/blob/main/LICENSE) file.
 
 ## Credits
 - [GST378](https://www.curseforge.com/members/gst378) - Creator of this template.
