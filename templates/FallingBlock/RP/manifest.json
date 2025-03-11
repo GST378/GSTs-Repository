@@ -1,0 +1,28 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Falling Block Template RP",
+    "description": "Create your own falling blocks easily!",
+    "uuid": "2306d931-292a-4117-ba19-0ebae1bbc9e2",
+    "min_engine_version": [ 1, 21, 60 ],
+    "version": [ 1, 0, 0 ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "7da486ef-5a00-42c9-a168-52cc5b537052",
+      "version": [ 0, 0, 1 ]
+    }
+  ],
+  "dependencies": [
+    { 
+      "uuid": "ac1057a4-d8ea-4c67-a368-ced546dca52d",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "metadata": { 
+    "authors": ["GST378"],
+    "license": "GNU General Public License v3.0 (GPL-3.0)",
+    "url": "https://github.com/GST378/GSTs-Repository/tree/main/templates"
+  }
+}
