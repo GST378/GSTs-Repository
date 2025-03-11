@@ -12,16 +12,16 @@ This is a template for creating custom falling blocks.
 > See how I did it in this template and copy it into your add-on.
 
 3. Now with the block and entities created, just add it to the list:
-> Go to the file 'scripts/FallingBlocks/fallingBlocks.js'
+> Go to the file 'scripts/FallingBlock/fallingBlocks.js'
 > Add your block to the 'Falling Blocks' object, example:
 ```javascript
 const FallingBlocks = {
     'custom:sand_block': {}
 }
 ```
-- Now import the **scripts/FallingBlocks/manager.js** file into your main file.
+- Now import the **scripts/FallingBlock/manager.js** file into your main file.
 ```javascript
-import './FallingBlocks/manager.js';
+import './FallingBlock/manager.js';
 ```
 4. And that's it, if you did everything correctly your block should start falling!
 ***
