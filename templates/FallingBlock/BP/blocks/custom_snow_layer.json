@@ -1,0 +1,134 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "falling_block:custom_snow_layer",
+      "menu_category": { "category": "construction" },
+      "states": {
+        "falling_block:layers": { // maxLayers = 8
+          "values": { "min": 0, "max": 7 }
+        }
+      }
+    },
+    "components": {
+      "minecraft:light_dampening": 0,
+      "minecraft:material_instances": {
+        "*": { "texture": "snow", "render_method": "opaque" }
+      }
+    },
+    "permutations": [
+      { // Layers 0-6 (< 7) Do not add the custom component in the last layer
+        "condition": "q.block_state('falling_block:layers') < 7",
+        "components": {
+          "minecraft:custom_components": ["falling_block:layer_placement"]
+        }
+      },
+      { // Layer 0
+        "condition": "q.block_state('falling_block:layers') == 0",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_0.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 2, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 2, 16]
+          }
+        }
+      },
+      { // Layer 1
+        "condition": "q.block_state('falling_block:layers') == 1",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_1.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 4, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 4, 16]
+          }
+        }
+      },
+      { // Layer 2
+        "condition": "q.block_state('falling_block:layers') == 2",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_2.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 6, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 6, 16]
+          }
+        }
+      },
+      { // Layer 3
+        "condition": "q.block_state('falling_block:layers') == 3",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_3.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 8, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 8, 16]
+          }
+        }
+      },
+      { // Layer 4
+        "condition": "q.block_state('falling_block:layers') == 4",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_4.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 10, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 10, 16]
+          }
+        }
+      },
+      { // Layer 5
+        "condition": "q.block_state('falling_block:layers') == 5",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_5.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 12, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 12, 16]
+          }
+        }
+      },
+      { // Layer 6
+        "condition": "q.block_state('falling_block:layers') == 6",
+        "components": {
+          "minecraft:geometry": "geometry.snow_layer_6.block",
+          "minecraft:collision_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 14, 16]
+          },
+          "minecraft:selection_box": {
+            "origin": [-8, 0, -8],
+            "size": [16, 14, 16]
+          }
+        }
+      },
+      { // Layer 7 (full block)
+        "condition": "q.block_state('falling_block:layers') == 7",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:collision_box": true,
+          "minecraft:selection_box": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "falling_block:custom_sand",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {}
+  }
+}
