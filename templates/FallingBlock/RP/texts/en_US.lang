@@ -1,0 +1,9 @@
+## Blocks
+tile.falling_block:custom_sand.name=Custom Sand
+tile.falling_block:custom_concrete_powder.name=Custom Concrete Powder
+tile.falling_block:custom_snow_layer.name=Custom Snow Layer
+
+## Entities
+entity.falling_block:custom_sand.entity.name=Custom Sand
+entity.falling_block:custom_concrete_powder.entity.name=Custom Concrete Powder
+entity.falling_block:custom_snow_layer.entity.name=Custom Snow Layer
