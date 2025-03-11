@@ -26,6 +26,6 @@ A brief list of code snippets available here:
 
 ### My Profiles
 
-- [MCPEDl](https://mcpedl.com/user/gst378/)
+- [MCPEDL](https://mcpedl.com/user/gst378/)
 
 - [CurseForge](https://www.curseforge.com/members/gst378)
