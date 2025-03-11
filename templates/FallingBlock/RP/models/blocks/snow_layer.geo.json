@@ -1,0 +1,351 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_0.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 2, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 14],
+                  "uv_size": [16, 2]
+                },
+                "east": {
+                  "uv": [0, 14],
+                  "uv_size": [16, 2]
+                },
+                "south": {
+                  "uv": [0, 14],
+                  "uv_size": [16, 2]
+                },
+                "west": {
+                  "uv": [0, 14],
+                  "uv_size": [16, 2]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "item_display_transforms": {
+        "gui": {
+          "rotation": [30, 45, 0],
+          "translation": [0, 0, 0],
+          "scale": [0.65, 0.65, 0.65],
+          "rotation_pivot": [0, 0, 0],
+          "scale_pivot": [0, 0, 0],
+          "fit_to_frame": false
+        }
+      }
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_1.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 4, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 12],
+                  "uv_size": [16, 4]
+                },
+                "east": {
+                  "uv": [0, 12],
+                  "uv_size": [16, 4]
+                },
+                "south": {
+                  "uv": [0, 12],
+                  "uv_size": [16, 4]
+                },
+                "west": {
+                  "uv": [0, 12],
+                  "uv_size": [16, 4]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_2.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 6, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 10],
+                  "uv_size": [16, 6]
+                },
+                "east": {
+                  "uv": [0, 10],
+                  "uv_size": [16, 6]
+                },
+                "south": {
+                  "uv": [0, 10],
+                  "uv_size": [16, 6]
+                },
+                "west": {
+                  "uv": [0, 10],
+                  "uv_size": [16, 6]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_3.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 8, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 8],
+                  "uv_size": [16, 8]
+                },
+                "east": {
+                  "uv": [0, 8],
+                  "uv_size": [16, 8]
+                },
+                "south": {
+                  "uv": [0, 8],
+                  "uv_size": [16, 8]
+                },
+                "west": {
+                  "uv": [0, 8],
+                  "uv_size": [16, 8]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_4.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 10, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 6],
+                  "uv_size": [16, 10]
+                },
+                "east": {
+                  "uv": [0, 6],
+                  "uv_size": [16, 10]
+                },
+                "south": {
+                  "uv": [0, 6],
+                  "uv_size": [16, 10]
+                },
+                "west": {
+                  "uv": [0, 6],
+                  "uv_size": [16, 10]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_5.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 12, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 4],
+                  "uv_size": [16, 12]
+                },
+                "east": {
+                  "uv": [0, 4],
+                  "uv_size": [16, 12]
+                },
+                "south": {
+                  "uv": [0, 4],
+                  "uv_size": [16, 12]
+                },
+                "west": {
+                  "uv": [0, 4],
+                  "uv_size": [16, 12]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": {
+        "identifier": "geometry.snow_layer_6.block",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [0, 0.75, 0]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [0, 4, 0],
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 14, 16],
+              "uv": {
+                "north": {
+                  "uv": [0, 2],
+                  "uv_size": [16, 14]
+                },
+                "east": {
+                  "uv": [0, 2],
+                  "uv_size": [16, 14]
+                },
+                "south": {
+                  "uv": [0, 2],
+                  "uv_size": [16, 14]
+                },
+                "west": {
+                  "uv": [0, 2],
+                  "uv_size": [16, 14]
+                },
+                "up": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                },
+                "down": {
+                  "uv": [16, 16],
+                  "uv_size": [-16, -16]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
