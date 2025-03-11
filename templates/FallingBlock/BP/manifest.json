@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Falling Block Template BP",
+    "description": "Create your own falling blocks easily!",
+    "uuid": "ac1057a4-d8ea-4c67-a368-ced546dca52d",
+    "min_engine_version": [ 1, 21, 60 ],
+    "version": [ 1, 0, 0 ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "600a9f78-c6d2-4836-805b-c88d16468dee",
+      "version": [ 0, 0, 1 ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "c0ed8347-43e5-4052-acaf-57724f767349",
+      "entry": "scripts/main.js",
+      "version": [ 0, 0, 1 ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "2306d931-292a-4117-ba19-0ebae1bbc9e2",
+      "version": [ 1, 0, 0 ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.17.0"
+    }
+  ],
+  "metadata": { 
+    "authors": ["GST378"],
+    "license": "GNU General Public License v3.0 (GPL-3.0)",
+    "url": "https://github.com/GST378/GSTs-Repository/tree/main/templates"
+  }
+}
