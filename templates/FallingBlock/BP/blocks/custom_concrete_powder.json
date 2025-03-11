@@ -1,0 +1,12 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "falling_block:custom_concrete_powder",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "minecraft:custom_components": ["falling_block:powder_placement"]
+    }
+  }
+}
