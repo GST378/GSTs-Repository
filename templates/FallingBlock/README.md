@@ -1,7 +1,6 @@
 # Falling Block Template
 
-> This is a template for creating custom falling blocks.
-> Stable - Minecraft Bedrock 1.21.60 +
+This is a template for creating custom falling blocks.
 
 ### How to add a falling block?
 
@@ -14,33 +13,50 @@
 
 3. Now with the block and entities created, just add it to the list:
 > Go to the file 'scripts/FallingBlocks/fallingBlocks.js'
-> Add your block to the 'FallingBlocks' object, example:
+> Add your block to the 'Falling Blocks' object, example:
 ```javascript
 const FallingBlocks = {
     'custom:sand_block': {}
 }
 ```
-- Now import the **scripts/FallingBlocks/manager.js** file into your main file and your blocks should start falling!
+- Now import the **scripts/FallingBlocks/manager.js** file into your main file.
 ```javascript
 import './FallingBlocks/manager.js';
 ```
+4. And that's it, if you did everything correctly your block should start falling!
 ***
-### FallingBlocks Documentation
+### Additional Settings
+
+- Powder
+> Add the custom component `falling_block:powder_placement` to your block's json file.
+
+- Layers
+> Add the custom component `falling_block:layer_placement` to your block's json file.
+> Add the `falling_block:layers` state and define the permutations for each value correctly in your block's json file.
+> Also add the `falling_block:layers` property with the same values as the state in your entity's json file.
+
+
+## FallingBlocks Documentation
 
 **FallingBlocks**
 > An object containing all created falling blocks, with keys corresponding to their identifiers.
-- Each falling block object can include:
+
+**Each falling block object can include:**
 
 **Config**
 > Defines the properties of individual falling blocks. If omitted, default values will be applied.
+<details>
+  <summary>Show Table</summary>
 
-| Name | Default Value | Type | Description | Valid Values |
-|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-| type | 'default' | string | Defines the behavior of the falling block. | 'default', 'powder', 'layers' |
-| destroyOnFall | false | boolean | If true, the block will be destroyed upon falling instead of being placed. | false, true |
-| fallingSpeed | 0 | Decimal number | The extra speed at which the block will fall, must be a value between 0 and 1 and is completely optional. | 0..1 |
-| solidBlock | none | Identifier string, BlockPermutation | Only used on the 'powder' type, this block will be placed when falling into water. | |
-| maxLayers | none | Integer number | Only used on the 'layers' type, sets the maximum number of layers for your block. | 1..16 |
+  | Name          | Default Value | Type                | Description                                                                 | Valid Values        |
+  |:--------------:|:-------------:|:-------------------:|:---------------------------------------------------------------------------:|:-------------------:|
+  | type          | 'default'     | string              | Defines the behavior of the falling block.                                   | 'default', 'powder', 'layers' |
+  | destroyOnFall | false         | boolean             | If true, the block will be destroyed upon falling instead of being placed.   | false, true         |
+  | fallingSpeed  | 0             | Decimal number      | The extra speed at which the block will fall, must be a value between 0 and 1 and is completely optional. | 0..1                |
+  | solidBlock    | none          | Identifier string, BlockPermutation | Only used on the 'powder' type, this block will be placed when falling into water. |                    |
+  | maxLayers     | none          | Integer number      | Only used on the 'layers' type, sets the maximum number of layers for your block. | 1..16               |
+
+</details>
 
 **onStartFalling**
 > Optional event triggered when a block starts falling.
@@ -111,8 +127,23 @@ const FallingBlocks = {
     // Add more falling blocks here!
 }
 ```
+### Short Example
+```javascript
+const FallingBlocks = {
+    // default
+    'custom:sand_block': {},
+    // powder
+    'custom:concrete_powder_block': {
+        config: { type: 'powder', solidBlock: 'minecraft:stone' }
+    },
+    // layers
+    'custom:snow_layer_block': {
+        config: { type: 'layers', maxLayers: 8 }
+    }
+}
+```
 
-### Other Functions
+## Other Functions
 
 **dropFallingBlock**
 > Helper function I added to drop a falling block when removed, you can use this one or create your own.
@@ -132,7 +163,6 @@ function dropFallingBlock(blockId, dimension, location) {
 }
 ```
 > Note that, like the entity, the particle has the same identifier as the block, but with `.break_particle` at the end.
-***
 
 ## Credits
 - [GST378](https://www.curseforge.com/members/gst378) - Creator of this template.
