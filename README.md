@@ -12,7 +12,7 @@ A brief list of the templates available here:
 
 - Falling Block
 
-- Soon...
+- More templates coming soon!
 
 ***
 
@@ -20,7 +20,7 @@ A brief list of the templates available here:
 
 A brief list of code snippets available here:
 
-- Soon...
+- Code snippets coming soon!
 
 ***
 
