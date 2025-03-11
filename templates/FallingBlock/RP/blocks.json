@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.40",
+  "falling_block:custom_sand": {
+    "sound": "sand",
+    "textures": "sand"
+  },
+  "falling_block:custom_concrete_powder": {
+    "sound": "sand",
+    "textures": "white_concrete_powder"
+  },
+  "falling_block:custom_snow_layer": {
+    "sound": "snow"
+  }
+}
