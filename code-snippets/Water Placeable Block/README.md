@@ -17,6 +17,22 @@ Places a block just above water, similar to the waterlily.
 
 - Due to the use of the custom component or interaction event, it is not necessary to use the `minecraft:block_placer` component as the block is already placed by the function itself.
 > If you still need to use it, find a way to cancel the placement of the block by that component, for example canceling the event using the `beforeOnPlayerPlace` custom component in your block.
+
+### Item Example
+```json
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {  
+    "description": {
+      "identifier": "example:water_placeable_block",
+    },    
+    "components": {
+      "minecraft:liquid_clipped": true,
+      "minecraft:custom_components": ["custom:water_placeable_block"]
+    }
+  }
+}
+```
 ***
 
 ## License
