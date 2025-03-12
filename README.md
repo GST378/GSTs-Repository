@@ -20,7 +20,9 @@ A brief list of the templates available here:
 
 A brief list of code snippets available here:
 
-- Code snippets coming soon!
+- Water Placeable Block
+
+- More code snippets coming soon!
 
 ***
 
