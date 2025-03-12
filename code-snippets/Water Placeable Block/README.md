@@ -24,7 +24,7 @@ Places a block just above water, similar to the waterlily.
   "format_version": "1.21.10",
   "minecraft:item": {  
     "description": {
-      "identifier": "example:water_placeable_block",
+      "identifier": "example:water_placeable_block"
     },    
     "components": {
       "minecraft:liquid_clipped": true,
