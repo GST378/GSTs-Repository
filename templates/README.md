@@ -2,7 +2,7 @@
 
 > All the templates available here are under the **GNU General Public License v3.0 (GPL-3.0)** license, see [LICENSE](https://github.com/GST378/GSTs-Repository/blob/main/LICENSE) file for details.
 
-## List of available templates here:
+## List of templates available here:
 
 ### [Falling Block Template](https://github.com/GST378/GSTs-Repository/tree/main/templates/FallingBlock)
 
